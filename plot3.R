@@ -7,7 +7,7 @@ clean_data <- subsetted_data[which(subsetted_data$Voltage != "?"),] #missing val
 # Add weekdays column
 clean_data$Weekdays <- weekdays(clean_data$Date)
 
-png(file="C:\\Users\\Haldun\\Desktop\\Exploratory Data Analysis\\Project 1\\plot2.png", width=480, height=480)
+png(file="C:\\Users\\Haldun\\Desktop\\Exploratory Data Analysis\\Project 1\\plot3.png", width=480, height=480)
 
 #Plotting
 plot(as.character(clean_data$Sub_metering_1), type="n", ylab="Energy Sub Metering", xaxt="n", xlab="")
