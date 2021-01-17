@@ -7,9 +7,10 @@ clean_data <- subsetted_data[which(subsetted_data$Voltage != "?"),] #missing val
 # Add weekdays column
 clean_data$Weekdays <- weekdays(clean_data$Date)
 
-#Plotting
-plot((as.character(clean_data$Global_active_power)), type="l", ylab="Global Active Power (kilowatts)")
-
-#Save
 png(file="C:\\Users\\Haldun\\Desktop\\Exploratory Data Analysis\\Project 1\\plot2.png", width=480, height=480)
+
+#Plotting
+plot(as.character(clean_data$Global_active_power), type="l", ylab="Global Active Power (kilowatts)", xaxt="n", xlab="")
+
+#Close
 dev.off()
