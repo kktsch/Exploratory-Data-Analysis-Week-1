@@ -6,5 +6,5 @@ clean_data <- subsetted_data[which(subsetted_data$Voltage != "?"),] #missing val
                                                                             
 #Plotting
 png(file="C:\\Users\\Haldun\\Desktop\\Exploratory Data Analysis\\Project 1\\plot1.png", width=480, height=480)
-hist(as.integer(as.character(clean_data$Global_active_power)), xlab="Global Active Power (kilowatts)", col="red", main="Global Active Power")
+hist(as.numeric(as.character(clean_data$Global_active_power)), xlab="Global Active Power (kilowatts)", col="red", main="Global Active Power")
 dev.off()
